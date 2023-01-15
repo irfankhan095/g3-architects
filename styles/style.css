@@ -138,6 +138,7 @@
     margin-top: 24px;
 }
 
+
 /* skill design  */
 
 .skill {
@@ -208,14 +209,71 @@
     font-weight: 500;
     font-size: 25px;
 }
+/* Blogs */
+.blogs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 228px;
+    margin-right: 228px;
+    margin-top: 50px;
+    
+}
+.blog img{
+    height: 130px;
+    width: 155px;
+    border-radius: 5px;
+}
+.blog{
+    display: flex;
+    gap: 10px;
+}
+.blogs-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 24px;
+    column-gap: 24px;
 
+}
+.blog-texts h3{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 24px;
+    margin-bottom: 50px;
+}
+.blogs-title{
+    font-weight: 600;
+    font-size: 20px;
+   
+}
+.blogs-description{
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.blog-btn{
+    color: #FFF4E7;
+    background-color: #FF900E;
+    border: 0;
+    height: 35px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
 /* Fact section design  */
 .fact {
     display: flex;
     justify-content: center;
     gap: 100px;
 }
-
+.blogs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .fact-container {
     border: 1px solid #FF900E;
     border-radius: 8px;
@@ -226,8 +284,13 @@
     gap: 10px;
     width: 150px;
     height: 150px;
+    transition:height 0.5s ease-in ,width 0.5s ease-in;
 }
-
+.fact-container:hover{
+    background-color: rgb(179, 167, 167);
+    height: 155px;
+    width: 155px;
+}
 .facts-texts {
     padding-left: 200px;
     margin-top: 100px;
